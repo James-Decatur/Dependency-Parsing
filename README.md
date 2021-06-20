@@ -1,6 +1,5 @@
 # Dependency-Parsing
 
-Commands:
 python oracle.py < example.tab
 
 
