@@ -56,8 +56,8 @@ def transition(trans, stack, buffer, arcs):
     elif trans[0] == RA:
         arcs.append(( stack[0], buffer[0], trans[1] ))
         stack.insert(0, buffer.pop(0))
-    else: 
-         stack.pop(0)   
+    elif trans[0] == RE: 
+         stack.pop(0)  
     return stack, buffer, arcs
 
 
